@@ -9,6 +9,28 @@
 
 }
 
+.innerlabelpicture{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative; 
+    color:#fff;
+    float: none;
+    width: 100%;
+    height: auto;
+}
+
+.innerlabel{
+    position: absolute;
+   bottom: 10px;
+   left: 0; 
+   width:100%;
+    background-color:#4aaaa5;
+    padding:15px 0;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
 @media screen and (max-width: 768px) {
     /* The body's bg color will be #333 */
     body {
@@ -31,5 +53,15 @@
         width: 100%;
         padding:20 0 0 0;
     }
+    .portfolioPhoto{
+
+        height:auto;
+        width:100%;
+    }
+
+    .innerlabelpicture{
+        width: 100%;
+    }
+
 }
 
