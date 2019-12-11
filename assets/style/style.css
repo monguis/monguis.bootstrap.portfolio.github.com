@@ -2,11 +2,10 @@
     float:left;
     padding:20px 20px 20px 0;
 }
-#tablet{
-}
-
-#defNav{
-
+.h1div{
+    background-color:#4aaaa5;
+    text-align: center;
+    color:#fff;
 }
 
 .innerlabelpicture{
@@ -52,7 +51,7 @@
 
 @media screen and (max-width: 480px){
     #mainpic{
-        width: 100%;
+        width: device-width;
         padding:20 0 0 0;
     }
     .portfolioPhoto{
@@ -64,6 +63,7 @@
     .innerlabelpicture{
         width: 100%;
     }
+
 
 }
 
