@@ -113,9 +113,9 @@
 
 </body>
 <script type = "text/javascript">
-var portfolio = [{deployedLink:"https://monguis.github.io/weather-checker/",gitHubLink:"https://github.com/monguis/weather-checker"},
-{deployedLink:"https://monguis.github.io/monguis.passwordgenerator.io/",gitHubLink:"https://github.com/monguis/monguis.passwordgenerator.io"},
-{deployedLink:"https://jeffordsm.github.io/Project1/",gitHubLink:"https://github.com/JeffordsM/Project1"}];
+var portfolio = [{name:"Weather Dashboard",deployedLink:"https://monguis.github.io/weather-checker/",gitHubLink:"https://github.com/monguis/weather-checker"},
+{name:"Password Generator",deployedLink:"https://monguis.github.io/monguis.passwordgenerator.io/",gitHubLink:"https://github.com/monguis/monguis.passwordgenerator.io"},
+{name:"My First Project",deployedLink:"https://jeffordsm.github.io/Project1/",gitHubLink:"https://github.com/JeffordsM/Project1"}];
 
 $(".innerlabelpicture").on("click",function(evt){
     evt.preventDefault();
@@ -123,6 +123,7 @@ $(".innerlabelpicture").on("click",function(evt){
         if(project.deployedLink === evt.target.parentElement.getAttribute("data-link")){
             $("#modalLink1").attr("href",project.deployedLink);
             $("#modalLink2").attr("href",project.gitHubLink);
+            $("#exampleModalCenterTitle").text(project.name);
         }
     });
 });
